@@ -39,6 +39,8 @@ class Main {
       pair.getKeyPassword()
     );
 
+    client.setCleanSession(false);
+
     try {
       client.connect(CONNECT_TIMEOUT);
       var topic = "live/level13/A249D7040CB1E6190002728F/#";
